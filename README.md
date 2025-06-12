@@ -28,6 +28,8 @@ RoBERTa-base (Masked Language Model)
 
 RoBERTa-base-SQuAD2 (Question Answering Model)
 
+Hugging Face Transformers
+
 PyTorch
 
 AssemblyAI (Speech-to-Text API)
