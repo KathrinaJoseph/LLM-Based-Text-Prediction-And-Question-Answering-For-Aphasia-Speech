@@ -1,2 +1,108 @@
-# LLM-Based-Text-Prediction-And-Question-Answering-For-Aphasia-Speech
-LLM-based system for text prediction and question answering tailored for aphasia speech. Enhances incomplete or disordered speech using RoBERTa-based models, supporting communication through context-aware predictions and intelligent Q&amp;A extraction.
+Aphasia Speech Assistant using RoBERTa
+This project builds a language model-based system to assist patients with Aphasia — a language disorder that affects speech production and comprehension. The system performs text prediction and question answering on fragmented or disfluent speech using RoBERTa-based models, helping reconstruct meaningful communication.
+
+🚀 Features
+✅ Speech-to-Text Transcription using AssemblyAI
+
+✅ Masked Word Prediction using RoBERTa (Masked Language Model)
+
+✅ Question Answering using fine-tuned RoBERTa QA model
+
+✅ Handles disfluencies and speech gaps often seen in aphasia patients
+
+✅ Evaluation Metrics: Accuracy, Precision, F1 Score, BLEU Score
+
+💡 Motivation
+Aphasia patients often struggle with missing words, fragmented speech, or incomplete sentences. Traditional speech analysis tools are not designed for such irregular input. This project leverages modern Large Language Models (LLMs) to:
+
+Reconstruct missing words
+
+Understand patient intent
+
+Answer questions from partial speech
+
+Assist therapy and communication
+
+🔧 Technologies Used
+RoBERTa-base (Masked Language Model)
+
+RoBERTa-base-SQuAD2 (Question Answering Model)
+
+Hugging Face Transformers
+
+PyTorch
+
+AssemblyAI (Speech-to-Text API)
+
+Python 3.8+
+
+📊 Evaluation Metrics
+Metric	Purpose
+Accuracy	Correct full predictions
+Precision	Reliability of correct predictions
+F1 Score	Balance between precision and recall
+BLEU Score	Similarity between predicted and reference text
+
+🗂 Dataset
+Custom dataset generated from speech samples with disfluency masking and QA pairs extracted.
+
+The project can easily adapt to real-world speech datasets (e.g. AphasiaBank).
+
+🔨 Installation
+⿡ Clone this repository:
+
+bash
+Copy
+Edit
+git clone https://github.com/your-username/aphasia-speech-assistant.git
+cd aphasia-speech-assistant
+⿢ Install required packages:
+
+bash
+Copy
+Edit
+pip install torch transformers assemblyai datasets
+⿣ Set up AssemblyAI API key in your code:
+
+python
+Copy
+Edit
+aai.settings.api_key = "YOUR_API_KEY"
+🧪 Running the Project
+Upload speech files (.wav) to transcribe and process.
+
+The system automatically:
+
+Transcribes speech
+
+Extracts patient utterances
+
+Masks disfluencies
+
+Predicts missing words
+
+Answers questions from the transcript
+
+Sample commands and code provided in:
+📂 main.py
+📂 text_prediction.py
+📂 question_answering.py
+
+📈 Results
+The system achieves good performance in reconstructing sentences from aphasia speech and accurately answering simple context-based questions. Evaluation is done using both strict (accuracy) and flexible (BLEU score) metrics.
+
+📚 References
+RoBERTa: A Robustly Optimized BERT Pretraining Approach (Liu et al.)
+
+Hugging Face Transformers
+
+AssemblyAI Speech-to-Text API
+
+Aphasia Research Papers
+
+📌 Future Work
+Fine-tune RoBERTa on aphasia-specific speech datasets
+
+Extend model to handle more severe disfluencies
+
+Add real-time speech correction interface
