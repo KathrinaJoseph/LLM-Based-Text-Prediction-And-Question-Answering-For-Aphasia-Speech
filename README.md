@@ -51,22 +51,14 @@ The project can easily adapt to real-world speech datasets (e.g. AphasiaBank).
 🔨 Installation
 ⿡ Clone this repository:
 
-bash
-Copy
-Edit
+ 
 git clone https://github.com/your-username/aphasia-speech-assistant.git
 cd aphasia-speech-assistant
 ⿢ Install required packages:
-
-bash
-Copy
-Edit
+ 
 pip install torch transformers assemblyai datasets
 ⿣ Set up AssemblyAI API key in your code:
 
-python
-Copy
-Edit
 aai.settings.api_key = "YOUR_API_KEY"
 🧪 Running the Project
 Upload speech files (.wav) to transcribe and process.
