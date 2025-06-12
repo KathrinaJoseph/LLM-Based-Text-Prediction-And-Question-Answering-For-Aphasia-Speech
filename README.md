@@ -28,8 +28,6 @@ RoBERTa-base (Masked Language Model)
 
 RoBERTa-base-SQuAD2 (Question Answering Model)
 
-Hugging Face Transformers
-
 PyTorch
 
 AssemblyAI (Speech-to-Text API)
@@ -83,10 +81,6 @@ Predicts missing words
 
 Answers questions from the transcript
 
-Sample commands and code provided in:
-📂 main.py
-📂 text_prediction.py
-📂 question_answering.py
 
 📈 Results
 The system achieves good performance in reconstructing sentences from aphasia speech and accurately answering simple context-based questions. Evaluation is done using both strict (accuracy) and flexible (BLEU score) metrics.
